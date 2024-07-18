@@ -1,5 +1,11 @@
+import NavBar from "../components/NavBar";
 const Register = () => {
-  return <h1>Register Page</h1>;
+  return (
+    <div>
+      <NavBar />
+      Register Page
+    </div>
+  );
 };
 
 export default Register;
