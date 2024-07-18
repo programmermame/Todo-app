@@ -5,9 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors:{
-      "facebook":"#4900d9"
-    },
+    // colors:{
+    //   "facebook":"#4900d9"
+    // },
     extend: {},
   },
   plugins: [],
