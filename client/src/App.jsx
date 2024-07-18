@@ -3,13 +3,16 @@ import "./App.css";
 import Landing from "./pages/Landing";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+// import MainLayout from "./layout/MainLayout";
 import Layout from "./pages/Layout";
+import Error from './pages/Error'
 
-function App() {
+const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
+      errorElement: <Error />,
       children: [
         {
           index: true,
@@ -27,11 +30,20 @@ function App() {
     },
   ]);
 
-  return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
-  );
+  // const router = createBrowserRouter(createRoutesFromElements(
+  //    <Route path="/" element={<MainLayout/>}>
+  //     <Route index element={<Landing/>}/>
+  //     <Route path="/register" element={<Register/>}/>
+  //     <Route path="/login" element={<Login/>}/>
+
+
+
+
+  //    </Route>
+  // ))
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;
+
