@@ -45,6 +45,7 @@ const Register = () => {
             placeholder="E-mail"
           />
           {/* <label htmlFor="password">Password</label> */}
+          
           <input
             className="border mb-5 p-1 outline-none shadow px-3"
             type="password"
